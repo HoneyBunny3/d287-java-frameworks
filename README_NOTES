@@ -76,10 +76,25 @@ change: from "1" to "Kat Scratcher with Kat-nip"
 
 ---SECTION D---
 
-prompt:
-file name:
-line number:
-change:
+prompt: Add an About page
+file name: about.html
+line number: ALL
+change: I created a new "About" page
+
+prompt: Add button from the new About page back to Home page
+file name: about.html
+line number: 22 - 23
+change: I created a button to navigate back to the "Home" page, mainscreen.html
+
+prompt: Add button from the Home page to the new About page
+file name: mainscreen.html
+line number: 21 - 22
+change: I created a button to navigate back to the "Home" page, mainscreen.html
+
+prompt: In the new About page, fill in content about the customer's company
+file name: about.html
+line number: ALL
+change: I added company details in the page body
 
 ---END SECTION D---
 

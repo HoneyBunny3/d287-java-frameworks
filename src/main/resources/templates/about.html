@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!-- Meta -->
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>About Us</title>
+</head>
+
+<!-- Body -->
+<body>
+<div class="container">
+    <h1>Hearth's Kat Kingdom</h1>
+    <a href="mainscreen.html">
+        <button>Home</button></a>
+    <hr>
+
+<!-- Page Body -->
+    <h2>About Hearth's Kat Kingdom</h2>
+    <hr>
+    <p>
+        <em>Hearth's Kat Kingdom is your one-stop-shop for all your feline needs!</em>
+        <br>
+        <br>
+        We have been in business since 2021, marking a new journey in Hearth's grand enterprise.
+        She knew at the young age of 6 months that she was going to build a Kat Kingdom!
+        <br>
+        <br>
+        <strong>From food to entertainment, we have everything your feline companion desires!</strong>
+        <br>
+        <br>
+    </p>
+
+<!-- Contact Us Form -->
+    <div class='contact'>
+        <h3>Contact Us</h3>
+        <hr>
+        <form>
+            <label for="fname">*First name:</label>
+            <input type ="text" id="fname" name="fname" value="Princess" required readonly><br><br>
+            <label for="lname">*Last name:</label>
+            <input type="text" id="lname" name="lname" value="Purr" readonly><br><br>
+            <label for="email">*Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="email" id="email" name="email" value="example@example.com" readonly><br><br>
+            <label for="phone">*Phone:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="tel" id="phone" name="phone" value="1-555-555-5555" minlength="10" maxlength="15" readonly><br><br>
+            <label for="box">*Comments:</label><br>
+            <textarea id="box" name="box" rows="5" cols="35" readonly></textarea><br><br>
+            <input type="submit" value="Submit" disabled>
+        </form>
+    </div>
+</body>
+</html>

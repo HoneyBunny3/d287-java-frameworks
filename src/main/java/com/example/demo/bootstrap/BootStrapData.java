@@ -39,9 +39,9 @@ public class BootStrapData implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-       /*
+
         OutsourcedPart o= new OutsourcedPart();
-        o.setCompanyName("Western Governors University");
+        o.setCompanyName("Hearth's Kat Kingdom");
         o.setName("out test");
         o.setInv(5);
         o.setPrice(20.0);
@@ -54,18 +54,17 @@ public class BootStrapData implements CommandLineRunner {
         }
 
         System.out.println(thePart.getCompanyName());
-        */
+
         List<OutsourcedPart> outsourcedParts=(List<OutsourcedPart>) outsourcedPartRepository.findAll();
         for(OutsourcedPart part:outsourcedParts){
             System.out.println(part.getName()+" "+part.getCompanyName());
         }
 
-        /*
+
         Product bicycle= new Product("bicycle",100.0,15);
         Product unicycle= new Product("unicycle",100.0,15);
         productRepository.save(bicycle);
         productRepository.save(unicycle);
-        */
 
         System.out.println("Started in Bootstrap");
         System.out.println("Number of Products"+productRepository.count());

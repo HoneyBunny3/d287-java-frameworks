@@ -4,73 +4,13 @@ This is where I will document where to locate sections C-J in my project code
 
 prompt: Update page title
 file name: mainscreen.html
-line number: 14
+line number: 15
 change: from "My Bicycle Shop" to "Hearth's Kat Kingdom"
 
 prompt: Update shop name
 file name: mainscreen.html
-line number: 19
+line number: 20
 change: from "Shop" to "Hearth's Kat Kingdom"
-
-prompt: Add 4 more parts
-file name: mainscreen.html
-line number: 53 - 136
-change: I added 4 more parts, to reach the required 5 total parts
-
-prompt: Add 4 more products
-file name: mainscreen.html
-line number: 173 - 256
-change: I added 4 more products, to reach the required 5 total products
-
-prompt: Change name of first part
-file name: mainscreen.html
-line number: 43
-change: from "1" to "Kat Litter Refill"
-
-prompt: Change name of second part
-file name: mainscreen.html
-line number: 64
-change: from "1" to "Kat Dander-Be-Gone!"
-
-prompt: Change name of third part
-file name: mainscreen.html
-line number: 85
-change: from "1" to "Salmon Kat Treats"
-
-prompt: Change name of fourth part
-file name: mainscreen.html
-line number: 106
-change: from "1" to "Kat-nip Refill"
-
-prompt: Change name of fifth part
-file name: mainscreen.html
-line number: 127
-change: from "1" to "Kat Scratcher Refill"
-
-prompt: Change name of first product
-file name: mainscreen.html
-line number: 163
-change: from "1" to "Premium Kat Food"
-
-prompt: Change name of second product
-file name: mainscreen.html
-line number: 184
-change: from "1" to "Kat Litter Box & Scooper"
-
-prompt: Change name of third product
-file name: mainscreen.html
-line number: 205
-change: from "1" to "Kat Water Fountain"
-
-prompt: Change name of fourth product
-file name: mainscreen.html
-line number: 226
-change: from "1" to "Kat Puzzle Feeder"
-
-prompt: Change name of fifth product
-file name: mainscreen.html
-line number: 247
-change: from "1" to "Kat Scratcher with Kat-nip"
 
 ---END SECTION C---
 
@@ -100,7 +40,12 @@ change: I added company details in the page body
 
 ---SECTION E---
 
-prompt:
+prompt: Add 5 Parts
+file name:
+line number:
+change:
+
+prompt: Add 5 Products
 file name:
 line number:
 change:

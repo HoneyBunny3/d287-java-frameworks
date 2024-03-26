@@ -41,14 +41,14 @@ change: I added company details in the page body
 ---SECTION E---
 
 prompt: Add 5 Parts
-file name:
-line number:
-change:
+file name: BootStrapData.java
+line number: 43 - 86
+change: I used the pre-existing code, duplicated it and created 5 total Parts for the web store.
 
 prompt: Add 5 Products
-file name:
-line number:
-change:
+file name: BootStrapData.java
+line number: 102 - 113
+change: I used the pre-existing code and added 3 lines to total 5 Products for the web store.
 
 ---END SECTION E---
 

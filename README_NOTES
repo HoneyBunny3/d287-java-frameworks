@@ -54,8 +54,18 @@ change: I used the pre-existing code and added 3 lines to total 5 Products for t
 
 ---SECTION F---
 
-prompt:
-file name:
+prompt: Add "Buy Now" button to Product list
+file name: mainscreen.html
+line number: 88-89
+change: I added a "Buy Now" button in the Product list next to the Update and Delete buttons.
+
+prompt: New "Buy Now" button in Product list decrements inventory of that product by one(1) AND does not affect the inventory of any associated parts
+file name: mainscreen.html
+line number:
+change:
+
+prompt: New "Buy Now" button in Product list displays a message that indicates success or failure of purchase
+file name: mainscreen.html
 line number:
 change:
 

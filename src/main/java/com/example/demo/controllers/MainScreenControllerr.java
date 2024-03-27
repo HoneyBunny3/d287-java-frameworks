@@ -34,8 +34,7 @@ public class MainScreenControllerr {
  /*   public MainScreenControllerr(PartRepository partRepository, ProductRepository productRepository) {
         this.partRepository = partRepository;
         this.productRepository = productRepository;
-    }
- */
+    }*/
 
     public MainScreenControllerr(PartService partService,ProductService productService){
         this.partService=partService;
@@ -54,4 +53,3 @@ public class MainScreenControllerr {
         return "mainscreen";
     }
 }
-

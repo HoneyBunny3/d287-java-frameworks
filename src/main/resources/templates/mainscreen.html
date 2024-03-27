@@ -85,6 +85,8 @@
             <td><a th:href="@{/showProductFormForUpdate(productID=${tempProduct.id})}" class="btn btn-primary btn-sm mb-3">Update</a>
                 <a th:href="@{/deleteproduct(productID=${tempProduct.id})}" class="btn btn-primary btn-sm mb-3"
                    onclick="if(!(confirm('Are you sure you want to delete this product?')))return false">Delete</a>
+                <a th:href="@{/buyNowProduct(productID=${tempProduct.id})}" class="btn btn-primary btn-sm mb-3"
+                   onclick="if(!(confirm('Are you sure you want to buy this product?')))return false">Buy Now</a>
             </td>
         </tr>
         </tbody>

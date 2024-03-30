@@ -34,7 +34,12 @@ change: I created a button to navigate back to the "Home" page, mainscreen.html
 prompt: In the new About page, fill in content about the customer's company
 file name: about.html
 line number: ALL
-change: I added company details in the page body
+change: I added fictional company details in the page body
+
+prompt: Make the new About page functional
+file name: AboutPageController.java
+line number: ALL
+change: I added a controller to enable the functionality of the "About Us" button from mainscreen.html AND I enabled the functionality of the "Home" button from within the new About page
 
 ---END SECTION D---
 
@@ -86,7 +91,27 @@ change: I implemented the feature to display a success or failure message for pu
 
 ---SECTION G---
 
-prompt:
+prompt: Add additional fields to the part entity for maximum and minimum inventory
+file name:
+line number:
+change:
+
+prompt: Modify the sample inventory to include the maximum and minimum fields
+file name:
+line number:
+change:
+
+prompt: Add to the InhousePartForm and OutsourcedPartForm forms additional text inputs for the inventory so the user can set the maximum and minimum values
+file name:
+line number:
+change:
+
+prompt: Rename the file the persistent storage is saved to
+file name:
+line number:
+change:
+
+prompt: Modify the code to enforce that the inventory is between or at the minimum and maximum value
 file name:
 line number:
 change:

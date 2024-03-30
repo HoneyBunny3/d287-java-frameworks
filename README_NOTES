@@ -59,15 +59,28 @@ file name: mainscreen.html
 line number: 88-89
 change: I added a "Buy Now" button in the Product list next to the Update and Delete buttons.
 
+prompt: New "Buy Now" button is functional, but does not decrement the inventory of that product, yet
+file name: BuyNowProduct.java, and PurchaseServiceImpl.java, and PurchaseService.java
+line number: ALL
+change: I setup the "Buy Now" button so that it is able to be clicked and displays the message "Are you sure you want to buy this product?"
+
 prompt: New "Buy Now" button in Product list decrements inventory of that product by one(1) AND does not affect the inventory of any associated parts
-file name: mainscreen.html
-line number:
-change:
+file name: BuyNowProduct.java
+line number: 32 - 44
+file name: PurchaseServiceImpl.java
+line number: 52 - 71
+file name: PurchaseService.java
+line number: 23
+change: I implemented the function to decrease the inventory count of the purchased product.
 
 prompt: New "Buy Now" button in Product list displays a message that indicates success or failure of purchase
-file name: mainscreen.html
-line number:
-change:
+file name: BuyNowProduct.java
+line number: 32 - 44
+file name: PurchaseServiceImpl.java
+line number: 52 - 71
+file name: PurchaseService.java
+line number: 23
+change: I implemented the feature to display a success or failure message for purchasing a prodcut
 
 ---END SECTION F---
 

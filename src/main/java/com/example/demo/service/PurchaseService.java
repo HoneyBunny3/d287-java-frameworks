@@ -20,5 +20,4 @@ public interface PurchaseService {
 
     public List<Product> listAll(String keyword);
 
-    boolean attemptPurchase(Product product);
-}
+    boolean attemptPurchaseById(Long productId);}

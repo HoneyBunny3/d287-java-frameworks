@@ -4,6 +4,7 @@ import com.example.demo.domain.Product;
 import com.example.demo.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -49,15 +50,23 @@ public class PurchaseServiceImpl implements PurchaseService {
     }
 
     @Override
-    public boolean attemptPurchase(Product product) {
-        // Simplified logic to demonstrate a service method
-        // This method now just returns a boolean indicating the success or failure of the purchase attempt
-        // The actual purchase logic would depend on your application's requirements
-        if (product != null) {
-            // Here, you would add your logic to check if the purchase can be made (e.g., checking stock)
-            // For demonstration, let's assume the purchase can always be made
-            return true;
+    @Transactional
+    public boolean attemptPurchaseById(Long productId) {
+        Optional<Product> currentProductOpt = productRepository.findById(productId);
+
+        if (currentProductOpt.isPresent()) {
+            Product currentProduct = currentProductOpt.get();
+
+            if (currentProduct.getInv() > 0) {
+                currentProduct.setInv(currentProduct.getInv() - 1);
+                save(currentProduct);
+                return true;
+            } else {
+                System.out.println("Product ID " + productId + " is out of stock.");
+                return false;
+            }
+        } else {
+            throw new RuntimeException("Did not find product id - " + productId);
         }
-        return false;
     }
 }

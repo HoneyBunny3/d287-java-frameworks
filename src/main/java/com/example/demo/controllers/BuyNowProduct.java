@@ -30,32 +30,16 @@ public class BuyNowProduct {
     }
 
     @GetMapping("/buyNowProduct")
-    public String listPartsAndProducts(Model theModel, RedirectAttributes redirectAttributes, @RequestParam("productKeyword") String productKeyword) {
-        // Use the listAll method to find products by keyword
-        List<Product> products = productService.listAll(productKeyword);
+    public String buyProductById(Model theModel, RedirectAttributes redirectAttributes, @RequestParam(value = "productID", required = false) Long productId) {
+        // Attempt to purchase the product by its ID
+        boolean purchaseResult = purchaseService.attemptPurchaseById(productId);
 
-        if (!products.isEmpty()) {
-            // Assuming you want to process just the first product that matches the keyword
-            Product product = products.get(0);
-
-            // Attempt to purchase the product
-            boolean purchaseResult = purchaseService.attemptPurchase(product);
-
-            if (purchaseResult) {
-                // If the purchase is successful, add a success message
-                redirectAttributes.addFlashAttribute("successMessage", "Product purchased successfully!");
-            } else {
-                // If the purchase fails (e.g., out of stock), add an error message
-                redirectAttributes.addFlashAttribute("errorMessage", "Product is out of stock.");
-            }
+        if (purchaseResult) {
+            redirectAttributes.addFlashAttribute("successMessage", "Product purchased successfully!");
         } else {
-            // If no products are found with the keyword, add an error message
-            redirectAttributes.addFlashAttribute("errorMessage", "Product not found.");
+            redirectAttributes.addFlashAttribute("errorMessage", "Unable to purchase the product. It may be out of stock.");
         }
 
-        // Redirect back to the mainscreen, which will display the messages
         return "redirect:/mainscreen";
     }
 }
-
-

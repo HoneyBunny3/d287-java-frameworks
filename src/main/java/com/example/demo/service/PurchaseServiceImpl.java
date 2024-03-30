@@ -42,7 +42,7 @@ public class PurchaseServiceImpl implements PurchaseService {
 
     @Override
     public List<Product> listAll(String keyword) {
-        // Assuming the 'search' method exists and is correctly implemented in your repository
+
         if (keyword != null) {
             return productRepository.search(keyword);
         }

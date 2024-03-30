@@ -1,10 +1,6 @@
 package com.example.demo.service;
 
 import com.example.demo.domain.Product;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-
 
 import java.util.List;
 

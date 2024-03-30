@@ -1,20 +1,16 @@
 package com.example.demo.bootstrap;
 
 import com.example.demo.domain.OutsourcedPart;
-import com.example.demo.domain.Part;
 import com.example.demo.domain.Product;
 import com.example.demo.repositories.OutsourcedPartRepository;
 import com.example.demo.repositories.PartRepository;
 import com.example.demo.repositories.ProductRepository;
-import com.example.demo.service.OutsourcedPartService;
-import com.example.demo.service.OutsourcedPartServiceImpl;
-import com.example.demo.service.ProductService;
-import com.example.demo.service.ProductServiceImpl;
+
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
-import java.util.Optional;
+
 
 /**
  *
@@ -84,8 +80,8 @@ public class BootStrapData implements CommandLineRunner {
         grooming.setPrice(45.0);
         grooming.setId(105L);
         outsourcedPartRepository.save(grooming);
-
-
+*/
+/*
         OutsourcedPart thePart=null;
         List<OutsourcedPart> outsourcedParts=(List<OutsourcedPart>) outsourcedPartRepository.findAll();
         for(OutsourcedPart part:outsourcedParts){
@@ -100,11 +96,11 @@ public class BootStrapData implements CommandLineRunner {
         }
 /*
         //Create 5 products
-        Product tower = new Product("Tower",85.00,25);
-        Product litter_box = new Product("Litter Box",45.0,50);
-        Product food_bowl = new Product("Food Bowl",25.0,30);
-        Product water_bowl = new Product("Water Bowl",15.0,45);
-        Product treat_puzzle = new Product("Treat Puzzle",20.0,10);
+        Product tower = new Product("Tower",85.00,5);
+        Product litter_box = new Product("Litter Box",45.0,10);
+        Product food_bowl = new Product("Food Bowl",25.0,15);
+        Product water_bowl = new Product("Water Bowl",15.0,20);
+        Product treat_puzzle = new Product("Treat Puzzle",20.0,1);
         //Save 5 products
         productRepository.save(tower);
         productRepository.save(litter_box);
@@ -112,7 +108,6 @@ public class BootStrapData implements CommandLineRunner {
         productRepository.save(water_bowl);
         productRepository.save(treat_puzzle);
 */
-
 
         System.out.println("Started in Bootstrap");
         System.out.println("Number of Products"+productRepository.count());
